@@ -1,6 +1,5 @@
 package Example2.config;
 
-import Example1.beans.Vehicle;
 import Example2.beans.Vehicle2;
 import org.springframework.context.annotation.Bean;
 

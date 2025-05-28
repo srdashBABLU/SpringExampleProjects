@@ -21,7 +21,7 @@ public class Example3 {
         System.out.println("Vehicle1 name from spring context is : " + veh.getName());
         // and it works !
 
-        // lets see some other ways to specify the name ! of the bean !
+        // let's see some other ways to specify the name ! of the bean !
         // let's get the variable !\
 
         var veh2 = context.getBean("honda",Vehicle3.class);
@@ -30,7 +30,7 @@ public class Example3 {
         System.out.println("Vehicle2 name from spring context is : " + veh2.getName());
         // and we got the name again !
 
-        // lets see the other way !
+        // let's see the other way !
         // let's get the variable !
         var veh3 = context.getBean("ferrari",Vehicle3.class);
 
