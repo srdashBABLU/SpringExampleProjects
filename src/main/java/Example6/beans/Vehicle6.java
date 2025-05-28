@@ -24,6 +24,16 @@ public class Vehicle6 {
         System.out.println("Printing hello from component vehicle6 bean");
     }
 
+    // to use the @PostConstruct Annotation we have to include the library !
+    // import jakarta.annotation.PostConstruct; in the file and
+    /*
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>3.0.0</version>
+         </dependency>
+     */
+
     @PostConstruct
     public void init(){
         this.name = "Ferrari";
