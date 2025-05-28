@@ -1,0 +1,20 @@
+. Spring provides special annotations called stereotype annotation which will help to
+  create the spring beans automatically in the application context.
+
+. The stereotype annotation in spring are :
+@Component
+@Service
+@Repository
+@Controller etc...
+
+@Component : is used as general on top of any java class.
+             it is the base for other annotations..
+
+@Service : Can be used on top of the classes inside the service layer,
+           Especially where we write business logic and make api calls..
+
+@Repository : Can be used on top of the classes which handels the code related
+              to the database access related operation like insert, delete, update etc..
+
+@Controller : Can be used on top of the classes inside the controller layer of
+              MVC applications !
