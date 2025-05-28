@@ -4,8 +4,6 @@ import Example7.beans.Vehicle7;
 import Example7.config.ProjectConfig7;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import javax.swing.text.Document;
-
 public class Example7 {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(ProjectConfig7.class);

@@ -1,6 +1,5 @@
 package Example8.beans;
 
-import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
 public class Vehicle8 {
