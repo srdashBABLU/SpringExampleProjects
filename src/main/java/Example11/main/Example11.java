@@ -5,6 +5,8 @@ import Example11.beans.Vehicle;
 import Example11.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Scanner;
+
 public class Example11 {
 
     public static void main(String[] args) {
@@ -15,6 +17,9 @@ public class Example11 {
         System.out.println("Person name from Spring Context is: " + person.getName());
         System.out.println("Vehicle name from Spring Context is: " + vehicle.getName());
         System.out.println("Vehicle that Person own is: " + person.getVehicle());
+//        Scanner s = new Scanner(System.in);
+//        var input = s.nextLine();
+//        System.out.println(input);
 
     }
 

@@ -8,6 +8,8 @@ public class Person {
 
     private String name="Lucy";
 
+    // This code is a constructor-based
+    // dependency injection example using Spring Framework in Java.
     @Autowired
     public Person(Vehicle vehicle){
         System.out.println("Person bean created by Spring");
