@@ -5,8 +5,6 @@ import Example11.beans.Vehicle;
 import Example11.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.Scanner;
-
 public class Example11 {
 
     public static void main(String[] args) {

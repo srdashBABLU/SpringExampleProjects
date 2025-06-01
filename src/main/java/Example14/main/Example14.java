@@ -1,7 +1,6 @@
 package Example14.main;
 
 import Example14.beans.Person;
-import Example14.beans.Vehicle;
 import Example14.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
