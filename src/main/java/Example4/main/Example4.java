@@ -19,7 +19,7 @@ public class Example4 {
         var context = new AnnotationConfigApplicationContext(ProjectConfig4.class);
 
         // let's get the variable !
-        var veh = context.getBean( Vehicle4.class);
+        var veh = context.getBean(Vehicle4.class);
 
         // let's print the value of the bean !
         System.out.println("Vehicle1 name from spring context is : " + veh.getName());

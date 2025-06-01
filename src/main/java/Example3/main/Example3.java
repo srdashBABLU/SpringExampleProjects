@@ -15,7 +15,7 @@ public class Example3 {
         var context = new AnnotationConfigApplicationContext(ProjectConfig3.class);
 
         // let's get the variable !
-        var veh = context.getBean("audi",Vehicle3.class);
+        var veh = context.getBean("audi", Vehicle3.class);
 
         // let's print the value of the bean !
         System.out.println("Vehicle1 name from spring context is : " + veh.getName());
@@ -24,7 +24,7 @@ public class Example3 {
         // let's see some other ways to specify the name ! of the bean !
         // let's get the variable !\
 
-        var veh2 = context.getBean("honda",Vehicle3.class);
+        var veh2 = context.getBean("honda", Vehicle3.class);
 
         // let's print the value of the bean !
         System.out.println("Vehicle2 name from spring context is : " + veh2.getName());
@@ -32,7 +32,7 @@ public class Example3 {
 
         // let's see the other way !
         // let's get the variable !
-        var veh3 = context.getBean("ferrari",Vehicle3.class);
+        var veh3 = context.getBean("ferrari", Vehicle3.class);
 
         // let's print the value of the bean !
         System.out.println("Vehicle3 name from spring context is : " + veh3.getName());

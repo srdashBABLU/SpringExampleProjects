@@ -15,4 +15,5 @@ configuration class.
 * */
 @Configuration
 @ComponentScan(basePackages = "Example11.beans")
-public class ProjectConfig { }
+public class ProjectConfig {
+}

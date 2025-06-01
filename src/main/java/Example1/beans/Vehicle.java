@@ -2,8 +2,8 @@ package Example1.beans;
 
 public class Vehicle {
 
-    private String name; // this is a private variable that cant be accessed outside the class !
     public int number = 281;
+    private String name; // this is a private variable that cant be accessed outside the class !
 
     public String getName() { // it is used to get the private variable !
         return name;
@@ -13,7 +13,7 @@ public class Vehicle {
         this.name = name;
     }
 
-    public String getName2(){
+    public String getName2() {
         return name + " V2";
     }
 }

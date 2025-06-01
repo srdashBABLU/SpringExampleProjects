@@ -10,21 +10,21 @@ import org.springframework.context.annotation.Configuration;
 public class ProjectConfig {
 
     @Bean
-    Vehicle vehicle1(){
+    Vehicle vehicle1() {
         var veh = new Vehicle();
         veh.setName("Audi");
         return veh;
     }
 
     @Bean
-    Vehicle vehicle2(){
+    Vehicle vehicle2() {
         var veh = new Vehicle();
         veh.setName("Honda");
         return veh;
     }
 
     @Bean
-    Vehicle vehicle3(){
+    Vehicle vehicle3() {
         var veh = new Vehicle();
         veh.setName("Ferrari");
         return veh;

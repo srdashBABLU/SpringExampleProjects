@@ -13,7 +13,7 @@ public class SpeedTest {
         // spring context is 75x slower than POJO
     }
 
-    public static void objTime(){
+    public static void objTime() {
         // Using nanoTime for more precision
         long startNano = System.nanoTime();
 
@@ -36,7 +36,7 @@ public class SpeedTest {
         System.out.println("Execution Time (seconds): " + (durationNano / 1_000_000_000.0));
     }
 
-    public static void contextTime(){
+    public static void contextTime() {
         // Using nanoTime for more precision
         long startNano = System.nanoTime();
 
@@ -59,14 +59,14 @@ public class SpeedTest {
         System.out.println("Execution Time (seconds): " + (durationNano / 1_000_000_000.0));
     }
 
-    public static void objTask(){
+    public static void objTask() {
         var veh1 = new Vehicle();
         veh1.setName("mercedes");
         System.out.println("The Name of the vehicle (non-spring Context) is : " + veh1.getName());
         System.out.println("The Number is : " + veh1.number);
     }
 
-    public static void contextTask(){
+    public static void contextTask() {
         // the 2nd way !
         // getting the name using spring context !
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);

@@ -5,14 +5,14 @@ import org.springframework.context.annotation.Bean;
 
 public class ProjectConfig2 {
     @Bean
-    Vehicle2 vehicle1(){
+    Vehicle2 vehicle1() {
         var veh = new Vehicle2();
         veh.setName("Audi A8");
         return veh;  // returning the entire object !
     }
 
     @Bean
-    Vehicle2 vehicle2(){
+    Vehicle2 vehicle2() {
         var veh = new Vehicle2();
         // veh is an object of the vehicle class
         // which can access the properties of the class !
@@ -21,7 +21,7 @@ public class ProjectConfig2 {
     }
 
     @Bean
-    Vehicle2 vehicle3(){
+    Vehicle2 vehicle3() {
         var veh = new Vehicle2();
         veh.setName("Ferrari");
         return veh; // returning the number ! from the class

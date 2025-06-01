@@ -6,17 +6,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class Person {
 
-    private String name="Lucy";
+    private final Vehicle vehicle;
+    private String name = "Lucy";
 
     // This code is a constructor-based
     // dependency injection example using Spring Framework in Java.
     @Autowired
-    public Person(Vehicle vehicle){
+    public Person(Vehicle vehicle) {
         System.out.println("Person bean created by Spring");
         this.vehicle = vehicle;
     }
-
-    private final Vehicle vehicle;
 
     public String getName() {
         return name;

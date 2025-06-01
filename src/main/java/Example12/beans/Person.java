@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 public class Person {
 
     private String name;
+    private Vehicle vehicle;
 
     public String getName() {
         return name;
@@ -18,15 +19,13 @@ public class Person {
         this.name = "Lucy";
     }
 
-    private Vehicle vehicle;
-
-    @Autowired
-    public void setVehicle(Vehicle vehicle){
-        this.vehicle = vehicle;
-    }
-
     public Vehicle getVehicle() {
         return vehicle;
+    }
+
+    @Autowired
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
 }

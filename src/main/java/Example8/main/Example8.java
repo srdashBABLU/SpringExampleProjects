@@ -37,7 +37,7 @@ public class Example8 {
         int randomNumber = random.nextInt(10);
         System.out.println("random number is : " + randomNumber);
 
-        if ((randomNumber % 2) == 0){
+        if ((randomNumber % 2) == 0) {
             context.registerBean("volkswagen", Vehicle8.class, volkswagenSupplier);
         } else {
             context.registerBean("audi", Vehicle8.class, audiSupplier);
@@ -46,19 +46,19 @@ public class Example8 {
         Vehicle8 volksVeh = null;
         Vehicle8 audiVeh = null;
 
-        try{
+        try {
             volksVeh = context.getBean("volkswagen", Vehicle8.class);
-        } catch (NoSuchBeanDefinitionException noSuchBeanDefinitionException){
+        } catch (NoSuchBeanDefinitionException noSuchBeanDefinitionException) {
             System.out.println("Volkswagen bean not created !");
         }
 
-        try{
+        try {
             audiVeh = context.getBean("audi", Vehicle8.class);
-        } catch (NoSuchBeanDefinitionException noSuchBeanDefinitionException){
+        } catch (NoSuchBeanDefinitionException noSuchBeanDefinitionException) {
             System.out.println("Audi bean not created !");
         }
 
-        if (null != volksVeh){
+        if (null != volksVeh) {
             System.out.println("Vehicle name from spring context is : " + volksVeh.getName());
         } else {
             System.out.println("Vehicle name from spring context is : " + audiVeh.getName());

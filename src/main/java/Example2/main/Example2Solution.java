@@ -17,7 +17,7 @@ public class Example2Solution {
         // but we are going to change the parameters of the getBean method !
         // var veh2 = context.getBean(Vehicle2.class);
         // the above one is the old method that we used !
-        var veh3 = context.getBean("vehicle1",Vehicle2.class);
+        var veh3 = context.getBean("vehicle1", Vehicle2.class);
         // the class name will be the same !
         // we have specified the bean name !
         // so we will get the bean of the name vehicle1
@@ -29,11 +29,11 @@ public class Example2Solution {
         // let's do it with the other beans !
 
         // vehicle2 bean
-        var veh4 = context.getBean("vehicle2",Vehicle2.class);
+        var veh4 = context.getBean("vehicle2", Vehicle2.class);
         System.out.println("Vehicle2 name from spring context is : " + veh4.getName());
 
         // vehicle3 bean
-        var veh5 = context.getBean("vehicle3",Vehicle2.class);
+        var veh5 = context.getBean("vehicle3", Vehicle2.class);
         System.out.println("Vehicle3 name from spring context is : " + veh5.getName());
 
         // that's all and its working !
