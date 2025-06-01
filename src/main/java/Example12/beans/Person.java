@@ -1,0 +1,32 @@
+package Example12.beans;
+
+import jakarta.annotation.PostConstruct;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Person {
+
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    @PostConstruct
+    public void setName() {
+        this.name = "Lucy";
+    }
+
+    private Vehicle vehicle;
+
+    @Autowired
+    public void setVehicle(Vehicle vehicle){
+        this.vehicle = vehicle;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+}
